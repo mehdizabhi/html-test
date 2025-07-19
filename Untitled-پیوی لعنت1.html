@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MahdNevisi نورانی با دکمه‌ها</title>
+<style>
+  /* مثل قبل */
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  .light {
+    position: fixed;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    filter: blur(70px);
+    animation: pulse 4s ease-in-out infinite;
+    opacity: 0.7;
+  }
+  .light1 { background: #007bff; top: 0; left: 0; animation-delay: 0s;}
+  .light2 { background: #dc3545; top: 0; right: 0; animation-delay: 0.7s;}
+  .light3 { background: #28a745; bottom: 0; left: 0; animation-delay: 1.4s;}
+  .light4 { background: #fd7e14; bottom: 0; right: 0; animation-delay: 2.1s;}
+  .light5 { background: #6f42c1; top: 50%; left: 50%; transform: translate(-50%, -50%); animation-delay: 2.8s; opacity: 0.4;}
+  .light6 { background: #e83e8c; top: 50%; right: 10%; animation-delay: 3.5s; opacity: 0.4;}
+  @keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.3);}
+  }
+  h1 {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 900;
+    z-index: 10;
+    text-align: center;
+    margin: 0 0 40px 0;
+    text-shadow:
+      0 0 10px #ff6ec4,
+      0 0 20px #ff6ec4,
+      0 0 30px #ff6ec4,
+      0 0 40px #ff6ec4,
+      0 0 50px #ff6ec4;
+  }
+  .buttons {
+    z-index: 10;
+    display: flex;
+    gap: 30px;
+  }
+  button {
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    border: none;
+    padding: 15px 45px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    box-shadow:
+      0 0 8px #ff6ec4,
+      0 0 15px #ff6ec4,
+      0 0 20px #7873f5;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  button:hover {
+    background: linear-gradient(135deg, #7873f5, #ff6ec4);
+    box-shadow:
+      0 0 15px #7873f5,
+      0 0 30px #ff6ec4,
+      0 0 40px #ff6ec4;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="light light1"></div>
+  <div class="light light2"></div>
+  <div class="light light3"></div>
+  <div class="light light4"></div>
+  <div class="light light5"></div>
+  <div class="light light6"></div>
+
+  <h1>MahdNevisi</h1>
+
+  <div class="buttons">
+    <button id="btn1">باز کردن رمان  پیوی لعنتی</button>
+    <button id="btn2">رفتن به نظر دادن</button>
+  </div>
+<h5 style="text-align: center; color:darkslateblue">طبق قوانین جمهوری اسلامی ایران</h5>
+<h5 style="text-align: center;color:darkslateblue "> طبق قوانین گوگل Google</h5>
+
+  <script>
+    document.getElementById('btn1').addEventListener('click', () => {
+      window.location.href = 'file:///C:/Users/ZPC/Desktop/Studio.Dreamwear/Untitled-%D9%BE%DB%8C%D9%88%DB%8C%20%D9%84%D8%B9%D9%86%D8%AA%DB%8C.html';
+    });
+    document.getElementById('btn2').addEventListener('click', () => {
+       window.location.href = 'file:///C:/Users/ZPC/Desktop/Studio.Dreamwear/Untitled-%D9%BE%DB%8C%D9%88%DB%8C.html';
+    });
+	  
+  </script>
+
+</body>
+</html>
